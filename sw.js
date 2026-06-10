@@ -1,4 +1,4 @@
-const CACHE = 'viking-oddil-v3';
+const CACHE = 'viking-oddil-fixed-v4';
 const ASSETS = [
  './',
  './index.html',

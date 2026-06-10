@@ -177,7 +177,6 @@ h1::after{content:" ᛟ"; color:#8f2f22}
 .detail-thumb{width:100%;border-radius:12px;border:2px solid #4a321f;background:#fff7df}
 .mini-list{display:grid;grid-template-columns:1fr;gap:14px}
 .mini-card{border:2px solid #6b4a2b;border-radius:16px;padding:16px;background:#fff7df;box-shadow:0 4px 14px #0001}
-.mini-top{display:flex;justify-content:space-between;gap:10px}
 .mini-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .mini-cols section{background:#fffdf5;border:1px solid #c39c6a;border-radius:12px;padding:12px}
 .mini-cols h4{margin:0 0 8px;font-size:18px;color:#6b2f1b}

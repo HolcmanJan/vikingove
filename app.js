@@ -606,17 +606,16 @@ const GAMES = [
     "rules": [
       "Král, poddaní i šašek se mohou po hřišti pohybovat a přihrávat si.",
       "Pokud je zasažen král, celé družstvo prohrává.",
-      "Pokud je zasažen poddaný, dřepne / lehne si a čeká, až mu spoluhráčka přihraje míč. Tím se vrací do hry.",
+      "Pokud je zasažen poddaný, dřepne / lehne si a čeká, až jí spoluhráčka přihraje míč. Tím se vrací do hry.",
       "Pokud je zasažen šašek, nic se neděje. Může bránit tělem, ale sám nesmí míč chytat ani brát do ruky.",
       "Vyhrává tým, jehož král zůstane jako poslední ve hře."
     ],
     "scoring": [
-      "Základní varianta: 1 vítězné kolo = 1 bod.",
+      "1 vítězné kolo = 1 bod.",
       "Král může mít 2–3 životy pro delší hru.",
       "Lze hrát na součet bodů z více kol."
     ],
     "leader": [
-      "Hra je výborná na vypuštění energie a zároveň podporuje týmovou strategii.",
       "Použijte měkký míč a jasně řekněte, že se nehází na hlavu.",
       "Pro děti, které nechtějí být v centru dění, je fajn role poddané nebo šaška.",
       "Když je velká skupina, střídejte krále i šašky mezi koly."
@@ -653,19 +652,18 @@ const GAMES = [
     ],
     "rules": [
       "První běžkyně doběhne celý okruh.",
-      "Vrátí se do loděnice a předá svou „část lodi“ další hráčce.",
+      "Vrátí se do loděnice a předá svou část lodi další hráčce.",
       "Následující hráčka si vezme jinou část a běží.",
       "Všechny členky posádky se musí vystřídat ve všech částech lodi.",
-      "Do hry vstupují nástrahy moře: BOUŘE – tým 10 sekund opravuje loď v dřepu, POŠKOZENÁ LOĎ – dvě hráčky doprovodí zraněnou do loděnice, DOPLNIT MEDOVINU – tým se musí napít, KRAKEN – všichni se chytí za ramena a běží společně kus trasy."
+      "Nástrahy moře: BOUŘE – tým 10 sekund opravuje loď v dřepu; POŠKOZENÁ LOĎ – dvě hráčky doprovodí zraněnou do loděnice; DOPLNIT MEDOVINU – tým se napije; KRAKEN – tým se chytí za ramena a běží společně kus trasy."
     ],
     "scoring": [
       "Vítězí klan, který první dokončí všechny okruhy a zvládne nástrahy.",
       "CTH varianta: za každý okruh 1 dřevo, 1 železo a 1 díl lodi."
     ],
     "leader": [
-      "Skvělé na spolupráci – každá běží, nikdo se nefláká.",
       "Nástrahy moře může vyvolávat vedoucí podle nálady a energie skupin.",
-      "Při menším počtu dětí zkraťte počet „částí lodi“ třeba na 3.",
+      "Při menším počtu dětí zkraťte počet částí lodi třeba na 3.",
       "Pro děti se speciálními potřebami lze dát roli hlásičky nástrah nebo počtářky kol."
     ],
     "printables": [
@@ -685,7 +683,7 @@ const GAMES = [
     "goal": "Odhalit vraha mezi přítomnými dřív, než stihne dokončit Ragnarovu pomstu.",
     "story": "Po smrti jarla Ragnara se jeho potomci sejdou na hostině. Jenže mezi nimi je někdo, kdo chce dokončit starou kletbu. Každá hráčka má tajemství, minulost a motiv.",
     "prep": [
-      "Vytisknout a rozdělit role – klidně použít přiložený plakát s rolemi bez úkolů nebo s úkoly.",
+      "Vytisknout a rozdělit role – použij přiložený plakát s rolemi bez úkolů nebo s úkoly.",
       "Vybrat jednoho vraha a rozdat role dalším hráčkám.",
       "Připravit atmosféru: svíčky / baterky, vikingská hudba, hostina, síň.",
       "Připravit místo pro hlasování a seznam podezřelých."
@@ -704,7 +702,7 @@ const GAMES = [
       "Vypravěčka přečte úvod a báseň o kletbě.",
       "Hráčky mezi sebou mluví, vyjednávají a získávají informace.",
       "Ve vybraných časech probíhá hlasování o podezřelých.",
-      "Vrah má omezený počet životů / možností selhání, podle zvolené varianty.",
+      "Vrah má omezený počet životů / možností selhání podle zvolené varianty.",
       "Po smrti hráčka přechází do Valhally a dál neprozrazuje klíčové informace."
     ],
     "scoring": [
@@ -712,10 +710,9 @@ const GAMES = [
       "Vyhrávají ostatní, pokud vraha jednoznačně odhalí nebo ho připraví o všechny životy."
     ],
     "leader": [
-      "Tohle je spíš velká večerní společenská hra / LARP, ideální pro klidnější blok.",
-      "Pro mladší nebo citlivější děti dejte raději variantu bez „vražd“ a místo toho použijte „kletba vyřadila hráčku ze síně“.",
-      "Udržujte tempo – dlouhé hluché pasáže zabíjí atmosféru víc než vrah.",
-      "Přidružené úkoly z role karet pomáhají, aby se nikdo nenudil."
+      "Tohle je velká večerní společenská hra / LARP.",
+      "Pro citlivější děti použijte formulaci „kletba vyřadila hráčku ze síně“.",
+      "Udržujte tempo – přidružené úkoly pomáhají, aby se nikdo nenudil."
     ],
     "printables": [
       "Plakát pravidel hry",
@@ -850,6 +847,8 @@ const GIRLS = [
   ]
 ];
 
+
+
 const MINIGAMES = [
   {
     "id": "cepice-ii",
@@ -871,12 +870,12 @@ const MINIGAMES = [
     "rules": [
       "Vedoucí vyvolá číslo – příslušné hráčky vyběhnou k čepici.",
       "Cílem je buď odnést čepici ke svému družstvu, nebo chytit soupeřku, která s čepicí utíká.",
-      "Pokud souboj trvá dlouho, vedoucí vyvolá další čísla a do hry se přidají další hráčky.",
+      "Pokud souboj trvá dlouho, vedoucí vyvolá další čísla.",
       "Za úspěšné dopravení čepice je bod, pokud nositelka dostane babu, bod má soupeř."
     ],
     "leader": [
-      "Super jako krátká rozehřívačka nebo doplněk mezi většími hrami.",
-      "Dobře fungují i finty, naznačení a taktika."
+      "Super rozehřívačka nebo doplněk mezi většími hrami.",
+      "Dobře fungují finty, naznačení a taktika."
     ]
   },
   {
@@ -889,7 +888,7 @@ const MINIGAMES = [
       "stůl",
       "10–20 drobných předmětů"
     ],
-    "goal": "Zapamatovat si rozmístění věcí a co nejrychleji odhalit změnu.",
+    "goal": "Zapamatovat si rozmístění věcí a odhalit změnu.",
     "prep": [
       "Rozložte na stůl různé věci.",
       "Nechte hráčku 1 minutu si vše prohlížet."
@@ -900,8 +899,8 @@ const MINIGAMES = [
       "Hráčka se otočí zpět a do 1 minuty musí určit změnu."
     ],
     "leader": [
-      "Výborné do deště nebo pro zklidnění po akční hře.",
-      "Lze hrát i týmově – kdo najde víc změn."
+      "Výborné do deště nebo na zklidnění.",
+      "Lze hrát týmově – kdo najde víc změn."
     ]
   },
   {
@@ -914,18 +913,18 @@ const MINIGAMES = [
       "papír",
       "tužky"
     ],
-    "goal": "Napsat co nejvíce věcí v místnosti nebo okolí, které mají zadanou barvu.",
+    "goal": "Napsat co nejvíce věcí dané barvy.",
     "prep": [
       "Vedoucí zadá barvu.",
       "Každá hráčka si vezme papír a tužku."
     ],
     "rules": [
-      "Po signálu začínají všichni psát co nejvíce věcí dané barvy.",
+      "Po signálu všichni píší co nejvíce věcí dané barvy.",
       "Po uplynutí času se seznamy porovnají.",
-      "Vyhrává hráčka s největším počtem platných položek."
+      "Vyhrává největší počet platných položek."
     ],
     "leader": [
-      "Skvělé jako rychlá výplň, když se čeká na program.",
+      "Skvělé jako rychlá výplň při čekání.",
       "Lze hrát i venku v přírodě."
     ]
   },
@@ -938,7 +937,7 @@ const MINIGAMES = [
     "materials": [
       "šátek na zavázání očí"
     ],
-    "goal": "Potichu si vyměnit místo v kruhu, aniž by vás chytač se zavázanýma očima chytil.",
+    "goal": "Potichu si vyměnit místo v kruhu, aniž by vás chytač chytil.",
     "prep": [
       "Všichni si sednou do kruhu a dostanou čísla.",
       "Jeden hráč je chytač uprostřed se zavázanýma očima."
@@ -946,11 +945,11 @@ const MINIGAMES = [
     "rules": [
       "Chytač vyvolá dvě čísla.",
       "Tyto hráčky si musí vnitřkem kruhu vyměnit místa.",
-      "Pokud je chytač stihne dotykem chytit, předává chytače chycené hráčce.",
+      "Pokud je chytač dotykem chytí, předává roli chycené hráčce.",
       "Pokud ne, pokračuje dál."
     ],
     "leader": [
-      "Hodně dobré na soustředění a ztišení skupiny.",
+      "Dobré na soustředění a ztišení skupiny.",
       "Dohlédněte na bezpečnost, ať se děti nesrazí."
     ]
   },
@@ -963,20 +962,20 @@ const MINIGAMES = [
     "materials": [
       "žádné"
     ],
-    "goal": "Zapamatovat si pohyby dvojic a najít co nejvíce správných párů.",
+    "goal": "Zapamatovat si pohyby dvojic a najít správné páry.",
     "prep": [
-      "Vyberte 2 dobrovolníky, kteří na chvíli odejdou.",
+      "Vyberte 2 dobrovolníky, kteří odejdou.",
       "Ostatní se rozdělí do dvojic a každá dvojice vymyslí vlastní pohyb."
     ],
     "rules": [
       "Dvojice se rozmístí po prostoru.",
-      "Dobrovolníci se vrátí a hrají jako v pexesu – ukazují na dvě osoby, které předvedou pohyb.",
-      "Když jsou pohyby stejné, dvojici našli.",
-      "Pokračují, dokud nenajdou všechny nebo do vypršení času."
+      "Dobrovolníci se vrátí a hrají jako pexeso – ukazují na dvě osoby.",
+      "Vybrané osoby předvedou pohyb.",
+      "Když jsou pohyby stejné, dvojici našli."
     ],
     "leader": [
       "Skvělé na pobavení i zapojení všech.",
-      "U menších dětí nechte pohyby jednoduché a zřetelné."
+      "U menších dětí nechte pohyby jednoduché."
     ]
   }
 ];
@@ -1080,6 +1079,26 @@ function renderGames() {
   drawList();
 }
 
+
+function renderMinigames() {
+  const host = $('#miniGamesList');
+  if (!host) return;
+  host.innerHTML = MINIGAMES.map(g => `
+    <article class="mini-card" id="mini-${g.id}">
+      <p class="eyebrow">Minihra</p>
+      <h3>${g.title}</h3>
+      <div class="badges">${badge(g.time)}${badge('energie: ' + g.energy)}${badge(g.people)}</div>
+      <p><b>Cíl:</b> ${g.goal}</p>
+      <p><b>Pomůcky:</b> ${g.materials.join(', ')}</p>
+      <div class="mini-cols">
+        <section><h4>Příprava</h4><ul>${g.prep.map(i => `<li>${i}</li>`).join('')}</ul></section>
+        <section><h4>Pravidla</h4><ul>${g.rules.map(i => `<li>${i}</li>`).join('')}</ul></section>
+        <section><h4>Tip pro vedoucí</h4><ul>${g.leader.map(i => `<li>${i}</li>`).join('')}</ul></section>
+      </div>
+    </article>
+  `).join('');
+}
+
 function renderSchedule() {
   $('#cthTable').innerHTML = CTH.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join('');
   $('#dashboardSchedule').innerHTML = CTH.slice(0,8).map(r => `
@@ -1106,6 +1125,7 @@ function renderGirls() {
 function renderMaterials() {
   const all = new Map();
   GAMES.forEach(g => g.materials.forEach(m => all.set(m, (all.get(m)||0)+1)));
+  if (typeof MINIGAMES !== 'undefined') MINIGAMES.forEach(g => g.materials.forEach(m => all.set(m, (all.get(m)||0)+1)));
   $('#materialList').innerHTML = [...all.entries()].sort((a,b)=>a[0].localeCompare(b[0], 'cs')).map(([m,c], i) => `
     <label class="check"><input type="checkbox" data-mat="${i}"> <span>${m}</span><em>${c}×</em></label>
   `).join('');
@@ -1137,34 +1157,6 @@ function roleText(r) {
   }[r] || '';
 }
 
-
-function renderMinigames() {
-  const host = $('#miniGamesList');
-  if (!host) return;
-  host.innerHTML = MINIGAMES.map(g => `
-    <div class="mini-card">
-      <div class="mini-top">
-        <div>
-          <p class="eyebrow">Minihra</p>
-          <h3>${g.title}</h3>
-          <div class="badges">
-            <span class="badge">${g.time}</span>
-            <span class="badge">energie: ${g.energy}</span>
-            <span class="badge">${g.people}</span>
-          </div>
-        </div>
-      </div>
-      <p><b>Cíl:</b> ${g.goal}</p>
-      <p><b>Pomůcky:</b> ${g.materials.join(', ')}</p>
-      <div class="mini-cols">
-        <section><h4>Příprava</h4><ul>${g.prep.map(i => `<li>${i}</li>`).join('')}</ul></section>
-        <section><h4>Pravidla</h4><ul>${g.rules.map(i => `<li>${i}</li>`).join('')}</ul></section>
-        <section><h4>Tip pro vedoucí</h4><ul>${g.leader.map(i => `<li>${i}</li>`).join('')}</ul></section>
-      </div>
-    </div>
-  `).join('');
-}
-
 function renderEmergency() {
   $('#emergency').innerHTML = `
     <div class="tip"><b>Když je chaos:</b> píšťalka, všichni dřep / ruka na hlavě, 10 sekund ticha, pak jen jedna věta: „Teď hraje každý tým podle čísla.“</div>
@@ -1190,10 +1182,10 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCountdown();
   setInterval(updateCountdown, 1000 * 60 * 15);
   renderGames();
+  renderMinigames();
   renderSchedule();
   renderGirls();
   renderMaterials();
   renderPrintables();
-  renderMinigames();
   renderEmergency();
 });
