@@ -1,0 +1,9 @@
+{
+  "name": "Vikingská oddílová aplikace",
+  "short_name": "Viking oddíl",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#efe0c2",
+  "theme_color": "#3b2818",
+  "icons": []
+}

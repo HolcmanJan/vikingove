@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vikingská oddílová aplikace</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header>
+  <p class="eyebrow">Tábor 4.–18. 7. 2026</p>
+  <h1>Vikingský oddíl</h1>
+  <p class="subtitle">Hry, materiály, pomůcky, seznam holek, CTH program a krizový tahák pro dvě vedoucí s dvaceti dětmi. Offline použitelná webová aplikace.</p>
+</header>
+
+<nav class="nav">
+  <button data-page="dashboard">Přehled</button>
+  <button data-page="games">Hry</button>
+  <button data-page="minigames">Minihry</button>
+  <button data-page="materials">Pomůcky</button>
+  <button data-page="printables">Materiály k tisku</button>
+  <button data-page="schedule">CTH plán</button>
+  <button data-page="girls">Holky / poznámky</button>
+  <button data-page="assets">Obrázky</button>
+  <button data-page="stress">Krizový tahák</button>
+</nav>
+
+<main>
+<section id="dashboard" class="page">
+  <div class="grid">
+    <div class="panel"><p class="eyebrow">Odpočet</p><div id="countdown" class="bigcount"></div><p id="countdownSub"></p></div>
+    <div class="panel wide-card"><p class="eyebrow">Rychlý plán</p><div id="dashboardSchedule"></div></div>
+    <div class="panel rescue-card">
+      <p class="eyebrow">Nejrychlejší záchrana dne</p>
+      <h2>Co dělat, když…</h2>
+      <div class="rescue-grid">
+        <div><b>🌧️ Prší / je zima</b><ul><li>Amulety, náramky, sáčky</li><li>Mafia – vikingská verze</li><li>Lovci indicií v chatce</li></ul></div>
+        <div><b>⚡ Je moc energie</b><ul><li>Pašeráci – runy</li><li>Dobytí severu</li><li>Vlajky klanů</li></ul></div>
+        <div><b>🌀 Je chaos</b><ul><li>Zastavit hru píšťalkou</li><li>Rozdělit jasné role</li><li>Dát 2min strategickou pauzu</li></ul></div>
+      </div>
+      <button class="link-btn" onclick="navTo('stress')">Otevřít krizový tahák</button>
+    </div>
+  </div>
+</section>
+
+<section id="games" class="page">
+  <div class="game-layout">
+    <aside class="panel">
+      <input id="gameSearch" class="search" placeholder="Hledat hru…">
+      <div id="filters" class="filters"></div>
+      <div id="gameList" class="game-list"></div>
+    </aside>
+    <article id="gameDetail" class="panel"></article>
+  </div>
+</section>
+
+<section id="minigames" class="page">
+  <div class="panel">
+    <p class="eyebrow">Krátké hry</p>
+    <h2>Minihry</h2>
+    <p>Tahle sekce je na rychlé výplně, přesuny, čekání nebo chvíle, kdy potřebujete zabavit oddíl bez velké přípravy.</p>
+    <div id="miniGamesList" class="mini-list"></div>
+  </div>
+
+<section id="materials" class="page">
+  <div class="panel">
+    <p class="eyebrow">Checklist</p>
+    <h2>Souhrn všech pomůcek</h2>
+    <p>Zaškrtávání se ukládá do prohlížeče, takže se vám seznam neztratí ani po obnovení stránky.</p>
+    <button class="print-btn" onclick="window.print()">Vytisknout checklist pomůcek</button>
+    <div id="materialList"></div>
+  </div>
+</section>
+
+<section id="printables" class="page">
+  <div class="panel">
+    <p class="eyebrow">Tisk</p>
+    <div class="print-actions">
+      <button class="print-btn" onclick="window.print()">Vytisknout všechny materiály</button>
+      <button class="print-btn" onclick="printOnly('runePrint')">Tisknout jen runy</button>
+      <button class="print-btn" onclick="printOnly('rolePrint')">Tisknout jen role</button>
+      <button class="print-btn" onclick="printOnly('symbolPrint')">Tisknout jen symboly</button>
+      <button class="print-btn" onclick="printOnly('posterKral')">Tisknout plakát: Král, poddaný, šašek</button>
+      <button class="print-btn" onclick="printOnly('posterLode')">Tisknout plakát: Dračí lodě</button>
+      <button class="print-btn" onclick="printOnly('posterRagnar')">Tisknout plakát: Prokletí Jarla Ragnara</button>
+      <button class="print-btn" onclick="printOnly('posterRole')">Tisknout: Havraní kletba – role</button>
+    </div>
+    <div id="runePrint" class="print-section">
+    <h2>Runy pro Pašeráky</h2>
+    <div id="runeCards" class="print-grid"></div>
+    </div>
+    <div id="rolePrint" class="print-section">
+    <h2>Kartičky rolí pro vikingskou Mafii</h2>
+    <div id="roleCards" class="print-grid"></div>
+    </div>
+    <div id="symbolPrint" class="print-section">
+    <h2>Kartičky symbolů pro amulety</h2>
+    <div id="symbolCards" class="print-grid"></div>
+    <div id="posterKral" class="print-section">
+      <h2>Plakát hry: Král, poddaný a šašek</h2>
+      <img class="hero-img" src="assets/hra-kral-poddany-sasek.jpg" alt="Král, poddaný a šašek">
+    </div>
+    <div id="posterLode" class="print-section">
+      <h2>Plakát hry: Závod dračích lodí</h2>
+      <img class="hero-img" src="assets/zavod-dracich-lodi.jpg" alt="Závod dračích lodí">
+    </div>
+    <div id="posterRagnar" class="print-section">
+      <h2>Plakát hry: Prokletí Jarla Ragnara</h2>
+      <img class="hero-img" src="assets/prokleti-jarla-ragnara.jpg" alt="Prokletí Jarla Ragnara">
+    </div>
+    <div id="posterRole" class="print-section">
+      <h2>Havraní kletba – role</h2>
+      <img class="hero-img" src="assets/havrani-kletba-role.jpg" alt="Havraní kletba role">
+    </div>
+  </div>
+</section>
+
+<section id="schedule" class="page">
+  <div class="panel">
+    <p class="eyebrow">Celotáborová hra</p>
+    <h2>CTH a pevný program</h2>
+    <table><thead><tr><th>Datum</th><th>Ráno</th><th>Dopo</th><th>Odpo</th><th>Večer</th></tr></thead><tbody id="cthTable"></tbody></table>
+  </div>
+</section>
+
+<section id="girls" class="page">
+  <div class="panel">
+    <p class="eyebrow">Oddíl</p>
+    <h2>Orientační seznam 20 holek</h2>
+    <p>Poznámky se ukládají lokálně v prohlížeči. Barevné značky jsou přepsané z přiloženého seznamu, otazníky nechávám jako nejasné.</p>
+    <table><thead><tr><th>#</th><th>Příjmení</th><th>Jméno</th><th>Označení</th><th>Poznámka</th></tr></thead><tbody id="girlsTable"></tbody></table>
+  </div>
+</section>
+
+<section id="assets" class="page">
+  <div class="panel">
+    <p class="eyebrow">Vizuály</p>
+    <h2>Přiložené obrázky v aplikaci</h2>
+    <div class="gallery">
+      <img src="assets/mapa-fjord.png" alt="Mapa fjordu">
+      <img src="assets/kreativni-hry.png" alt="Kreativní hry">
+      <img src="assets/symboly.png" alt="Symboly">
+      <img src="assets/mapa-poklad.png" alt="Boj o poklad fjordu">
+      <img src="assets/seznam-deti.png" alt="Seznam dětí">
+    </div>
+  </div>
+</section>
+
+<section id="stress" class="page">
+  <div class="panel">
+    <p class="eyebrow">SOS pro vedoucí</p>
+    <h2>Krizový tahák</h2>
+    <div id="emergency"></div>
+    <h3>Mini pravidla pro děti se speciálními potřebami</h3>
+    <ul>
+      <li>Každá hra má mít jasnou roli i pro dítě, které nechce běhat nebo se nechce hádat.</li>
+      <li>Před hrou říct jen 3 hlavní pravidla. Detaily dát až při ukázce.</li>
+      <li>Používat vizuální body: základna, cedule, kartička, barva týmu.</li>
+      <li>Mít možnost pauzy bez ostudy: „strážkyně ohně“, „pomocnice vedoucí“, „počtářka bodů“.</li>
+      <li>U soutěží oceňovat spolupráci, ne jen výkon.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<p class="footer">Skaldu zdar. A hlavně: žádný stres, jen dobře schované pomůcky.</p>
+</div>
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body>
+</html>
